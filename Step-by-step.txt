@@ -1,0 +1,15 @@
+Source: https://www.patricksoftwareblog.com/steps-for-starting-a-new-flask-project-using-python3/
+## Preparando ambiente
+- criei a pasta flask-app-temp
+- instalei o venv: sudo apt-get install python3-venv
+- criei virtual env: python3 -m venv venv
+- para ativar: source venv/bin/activate (coloquei no .bashrc como venv)
+- confirma versão do python: python --version
+
+## Instalado pacotes
+- instala flask: pip install flask
+- ver pacotes instalado e coloca no requirements: pip freeze > requirements.txt 
+- para instalar td de uma vez: pip install -r requirements.txt
+
+## Seguindo https://realpython.com/introduction-to-flask-part-1-setting-up-a-static-site/
+# Porta e IP: http://127.0.0.1:5000/
