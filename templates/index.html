@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <title>Flask Intro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,20 @@
     <!-- <link href="static/css/style.css" type="text/css" rel="stylesheet"> -->
   </head>
     <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="static/img/ar-logo.png" width="210" height="65" alt="">
-    </a>
-  </nav>
+      <a class="navbar-brand" href="{{url_for('index')}}">
+        <img src="static/img/ar-logo.png" width="210" height="65" alt="">
+      </a>
+      <ul class="navbar-nav mr">
+        <li class="nav-item active">
+          <a class="navbar-brand btn btn-primary" href="{{url_for('login')}}">Login</a>
+        </li>
+      </ul>
+    </nav>
   <body>
     <div class="container">
         <div class="mt-4 col-md-12">
           <div class="jumbotron text-center">
-            <h1 class="justify-content-center mb-3 font-weight-bold">Solving in Bioinformatics</h1>
+            <h1 class="justify-content-center mb-4 font-weight-bold">Solving Problems in Bioinformatics</h1>
             <div>
               <img src="static/img/image_index_page.jpg" class="img-fluid mb-3" alt="">
             </div>
@@ -27,7 +32,7 @@
                     <li >Genomics</li>
                     <li >Transcriptomics</li>
                     <li >Proteomics</li>
-                    <li >Basic Command Line Training</li>
+                    <li >Basic CLI Training</li>
                   </ul>
               </div>
               <div class="justify-content-center col-md-4"><i class="fa fa-phone fa-2x mb-3" aria-hidden="true"></i>
