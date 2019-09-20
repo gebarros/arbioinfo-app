@@ -2,6 +2,8 @@ import os
 from flask import (
   Blueprint, request, current_app, render_template
 )
+#from ..models import Admin
+
 login_blueprint = Blueprint('login', __name__, template_folder='templates')
 
 @login_blueprint.route('/')
