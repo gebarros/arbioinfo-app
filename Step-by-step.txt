@@ -19,3 +19,19 @@ Source: https://www.patricksoftwareblog.com/steps-for-starting-a-new-flask-proje
 - $ .tables #show all tables
 - $ insert into admin values('1','gebarros','admin123') # insere admin
 - $ .exit #sair
+
+# Estrutura
+- mkdir projectName %% mkdir projectName/app && cd projectName
+- touch app/__init__.py
+- touch app/app.py
+- cd app
+- criei virtual env: python3 -m venv venv
+- pip install flask
+- pip install ipython
+- mkdir templates
+- mkdir static
+
+# Criando tokens
+>>> import secrets
+>>> secrets.token_urlsafe(16)
+'Drmhze6EPcv0fN_81Bj-nA'
