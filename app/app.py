@@ -1,6 +1,6 @@
 from flask import Flask
 from blueprints.login import login_blueprint
-from db import db
+#from db import db
 
 # Melhor colocar o nome do pacote (app) do que o __name__
 def create_app(mode=None):
@@ -10,6 +10,6 @@ def create_app(mode=None):
 
   app.register_blueprint(login_blueprint)
 
-  db.init_app(app)
+ # db.init_app(app)
 
   return app
